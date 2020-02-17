@@ -33,8 +33,10 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <sys/mman.h>
 #include <sys/ioctl.h>
 #include <sys/stat.h>
-
 #include "mailbox.h"
+
+// Added sysmacros otherwise compile fails messily
+#include <sys/sysmacros.h>
 
 #define PAGE_SIZE (4*1024)
 
